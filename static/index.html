@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTMX App</title>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.11"
+      integrity="sha384-0gxUXCCR8yv9FM2b+U3FDbsKthCI66oH5IA9fHppQq9DDMHuMauqq1ZHBpJxQ0J0"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <h1>HTMX App</h1>
+    <div id="hello-outlet">[no greeting to display]</div>
+    <button hx-get="/hello" hx-target="#hello-outlet">
+      Click to fetch hello
+    </button>
   </body>
 </html>

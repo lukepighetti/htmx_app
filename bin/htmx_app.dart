@@ -15,7 +15,7 @@ Future<void> main(List<String> arguments) async {
   app.get('/', handler);
 
   app.get('/hello', (Request request) {
-    return Response.ok('hello-world');
+    return Response.ok('Hello, world!');
   });
 
   app.get('/user/<user>', (Request request, String user) {
