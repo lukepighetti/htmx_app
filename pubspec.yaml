@@ -8,6 +8,7 @@ environment:
 
 dependencies:
   shelf_router: ^1.1.4
+  shelf_static: ^1.1.2
   shelf: ^1.4.1
 
 dev_dependencies:
